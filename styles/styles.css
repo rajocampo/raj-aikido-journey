@@ -15,6 +15,10 @@ html{
     
 }
 
+body{
+  background-color: #fbf18f !important;
+}
+
 .author-name{
     padding-bottom: 100px;
     padding-left:60px;
@@ -28,7 +32,6 @@ html{
     flex-direction:column;
     align-items:center;
     padding-top:100px;
-    min-height:60vh;
 }
 
 /*Navbar*/
@@ -68,16 +71,33 @@ html{
 }
 
 .landingHero{
-    min-height:50vh;
+    min-height:40vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(40,41,47);
-    background: linear-gradient(180deg, rgba(40,41,47,1) 10%, rgba(187,0,14,1) 60%);
+    /*background: rgb(40,41,47);
+    background: linear-gradient(180deg, rgba(40,41,47,1) 10%, rgba(187,0,14,1) 60%);*/
+    /*background: url("../assets/kenshin.jpg");*/
+    background-color: var(--dark-blue)!important;
 }
+
 .landingHero h1{
     color: white !important;;
 }
+
+#aikidoJap{
+  letter-spacing:30px;
+  font-family: 'Open Sans'!important;
+  font-weight: 800 !important;
+  font-size: 100px !important;
+  color:white !important;
+  z-index: 0;
+  opacity: 0.25;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+
 h1{
     font-family: 'Open Sans'!important;
     font-weight: 800 !important;
@@ -94,10 +114,6 @@ h4{
 .landingHero h1:hover{
     transform:translateY(-15px);
     transition: transform 0.3s;
-}
-
-#herow{
-    margin-top:5rem !important;
 }
 
 .hero{
@@ -119,7 +135,62 @@ h4{
     background-color:var(--dark-red) !important;
     border-color:#FFFFFF !important;
 }
-  
+
+.aboutSite{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    /*background-color:var(--dark-blue);*/
+    min-height:60vh;
+    background: url("../assets/kenshin.jpg") 0% 50%;
+}
+
+#about{
+  color: #fbf18f !important;
+}
+
+#aboutJap{
+  letter-spacing:30px;
+  font-family: 'Open Sans'!important;
+  font-weight: 800 !important;
+  font-size: 90px !important;
+  color: white !important;
+  z-index: 0;
+  opacity: 0.30;
+  position: absolute;
+  top: 33%;
+  left: 35%;
+}
+
+#heading{
+  color:white;
+}
+
+#aboutContent{
+  color: white !important;
+  font-size: 20px !important;
+  text-align: center;
+}
+
+#aboutContentH4{
+  color: #fbf18f !important;
+  text-align: center;
+}
+
+#author{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#authorImg{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  border:5px solid var(--dark-red);
+}
+
 footer{
     background-color: var(--dark-blue);
     color:white;
@@ -271,7 +342,7 @@ footer{
   }
 }
 
-.custom-shape-divider-bottom-1647680161 {
+.custom-shape-divider-bottom-1648005942 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -280,16 +351,37 @@ footer{
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1647680161 svg {
+.custom-shape-divider-bottom-1648005942 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 204px;
+  height: 150px;
 }
 
-.custom-shape-divider-bottom-1647680161 .shape-fill {
-  fill: #FFFFFF;
+.custom-shape-divider-bottom-1648005942 .shape-fill {
+  fill: #C20008;
 }
+
+.custom-shape-divider-bottom-1647959403 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647959403 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 155px;
+}
+
+.custom-shape-divider-bottom-1647959403 .shape-fill {
+  fill: #FBF18F;
+}
+
 
 .custom-shape-divider-bottom-1647663680 {
   position: absolute;
@@ -317,6 +409,7 @@ footer{
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
+  
 }
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
@@ -358,6 +451,7 @@ footer{
 .timeline-article .content-right-container {
   max-width: 44%;
   width: 100%;
+  
 }
 .timeline-article .timeline-author {
   display: block;
