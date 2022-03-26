@@ -9,6 +9,11 @@
     font-family: 'Open Sans', sans-serif !important;
 }
 
+@font-face {
+  font-family: AsianNinja;
+  src: url(../assets/fonts/aAsianNinja.ttf);
+}
+
 html{
     overflow-x:hidden;
     scroll-behavior: smooth;
@@ -99,7 +104,7 @@ body{
 }
 
 h1{
-    font-family: 'Open Sans'!important;
+    font-family: AsianNinja!important;
     font-weight: 800 !important;
     font-size: 60px !important;
     color:var(--dark-red)!important;
@@ -159,7 +164,7 @@ h4{
   opacity: 0.30;
   position: absolute;
   top: 33%;
-  left: 35%;
+  left: 32%;
 }
 
 #heading{
@@ -185,10 +190,23 @@ h4{
 }
 
 #authorImg{
-  height:200px;
-  width:200px;
+  width:15%;
+  height:15%;
   border-radius: 50%;
   border:5px solid var(--dark-red);
+}
+
+#authorJap{
+  letter-spacing:30px;
+  font-family: 'Open Sans'!important;
+  font-weight: 800 !important;
+  font-size: 90px !important;
+  color: white !important;
+  z-index: 0;
+  opacity: 0.30;
+  position: absolute;
+  top: 33%;
+  left: 35%;
 }
 
 footer{
@@ -383,26 +401,26 @@ footer{
 }
 
 
-.custom-shape-divider-bottom-1647663680 {
+.custom-shape-divider-bottom-1648264016 {
   position: absolute;
   bottom: 0;
+
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1647663680 svg {
+.custom-shape-divider-bottom-1648264016 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 204px;
+  height: 75px;
 }
 
-.custom-shape-divider-bottom-1647663680 .shape-fill {
-  fill: #FFFFFF;
+.custom-shape-divider-bottom-1648264016 .shape-fill {
+  fill: #FBF18F;
 }
-
 /*===== Vertical Timeline =====*/
 #conference-timeline {
   position: relative;
