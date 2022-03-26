@@ -150,6 +150,12 @@ h4{
     background: url("../assets/kenshin.jpg") 0% 50%;
 }
 
+#btnModal{
+  position: absolute;
+  left:20%;
+  top:50%;
+}
+
 #about{
   color: #fbf18f !important;
 }
